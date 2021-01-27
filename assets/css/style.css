@@ -83,7 +83,7 @@ hr {
     color: var(--black);
     margin: 0 10px;
     text-decoration: none;
-    font-size: .75rem;
+    font-size: 0.75rem;
 }
 .push-right {
     margin-left: auto;
@@ -125,7 +125,7 @@ main {
 .btn {
     background: var(--blue);
     color: white;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 1px solid var(--blue);
     border-radius: 4px;
     text-align: center;
@@ -137,8 +137,8 @@ main {
     border: 1px solid var(--blue);
 }
 .btn-small {
-    padding: .3rem .5rem;
-    font-size: .75rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
 }
 .margin-top {
     margin-top: 2rem;
@@ -147,8 +147,9 @@ main {
     display: flex;
     flex-flow: column wrap;
     background: white;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 8px;
+    margin-bottom: 2rem;
   
 }
 .card > figure {
@@ -218,7 +219,7 @@ main {
     padding-bottom: 30px;
 }
 .copyright {
-    font-size: .75rem;
+    font-size: 0.75rem;
     margin-top: 5px;    
 }
 
