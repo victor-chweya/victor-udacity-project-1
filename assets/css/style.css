@@ -1,21 +1,13 @@
+@import url(reset.css);
+
 :root {
     --black:#272727;
     --blue: #0556f3;
     --dark-blue: #25265e;
 }
 
-html {
-box-sizing: border-box; 
-font-family: sans-serif;
-color: #666666;
-font-size: 24px;
-}
 
-*,
-*::before,
-*::after {
-box-sizing: inherit;
-}
+
 body{
     margin: 0;
     background: #f5f5f5;   
