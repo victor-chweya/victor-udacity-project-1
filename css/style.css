@@ -83,11 +83,32 @@ main {
     grid-template-columns: 1fr;
     grid-gap:15px;
 }
+.blog-post{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:15px;  
+}
+.avatar{
+    max-width: 80px;
+    border-radius: 100%;
+   
+}
+.title, .company{
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+.bio{
+    font-size: 0.85rem;
+    color: var(--black);
+}
 .col-full {
     grid-column: 1 / -1;
 }
 .col-two-thirds {
     grid-column: 1 / 1;   
+}
+article, aside {
+    grid-column: 1 / 1;
 }
 
 .img-responsive {
@@ -254,7 +275,7 @@ button:hover{
     .header > .btn{
         margin-right: 20px;        
     }
-    main{      
+    main, .blog-post{      
         grid-template-columns: 1fr 1fr 1fr;       
     }
     .col-full{
@@ -262,6 +283,12 @@ button:hover{
     }
     .col-two-thirds{
         grid-column: 1 / 3;       
+    }
+    aside{
+        grid-column: 1 / 1;
+    }
+    article {
+        grid-column: 2 / 4;
     }
     .card{      
         flex-flow: row wrap;       
