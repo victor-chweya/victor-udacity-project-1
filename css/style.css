@@ -286,6 +286,9 @@ button:hover{
     }
     aside{
         grid-column: 1 / 1;
+        background: wheat;
+        padding:30px 20px;
+        border-radius: 8px;
     }
     article {
         grid-column: 2 / 4;
@@ -300,6 +303,7 @@ button:hover{
     .card-body{
         margin-left: 15px;;
     }
+    
 }
 
 @media (min-width: 1280px) {
