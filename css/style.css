@@ -1,14 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
 @import url(reset.css);
-@import url(media-queries.css);
-
-:root {
-    --black:#272727;
-    --blue: #0556f3;
-    --dark-blue: #25265e;
-}
-
-
-
+@import url(variables.css);
 body{
     margin: 0;
     background: #f5f5f5;   
@@ -26,6 +18,11 @@ h6 {
 }
 figure {
     margin: 0;
+}
+figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--black);
 }
 a {
     text-decoration: none;
@@ -115,14 +112,18 @@ main {
     padding-bottom: .5rem;
     display: inline-block;    
 }
-.btn {
+button, .btn {
     background: var(--blue);
     color: white;
     padding: 0.5rem 1rem;
     border: 1px solid var(--blue);
     border-radius: 4px;
     text-align: center;
+    font-size: 1rem;
 
+}
+button:hover{
+    cursor: pointer;
 }
 .btn-outline {
     background: none;
@@ -219,4 +220,64 @@ main {
 .border-bottom {
     border-bottom: 1px solid rgba(0,0,0,0.1); 
 }
+@media (min-width: 640px) {
+    .nav-list{
+        margin: 0 -10px;
+        margin-left: auto;
+    }
+    .media a{    
+        margin: 10px 0;
+        flex:0 1 auto;    
+    }
+ 
+}
 
+@media (min-width: 768px) {
+    body{
+        font-size: 1rem;
+    }
+  
+}
+
+@media (min-width: 1024px) {
+    .nav{
+        margin-bottom: 4rem;
+    }
+    .partners > figure {   
+        margin: 0 20px;
+        flex: 1;        
+    }
+    .header {
+        flex-flow: wrap;
+        margin-right: 2rem;
+    }
+    .header > .btn{
+        margin-right: 20px;        
+    }
+    main{      
+        grid-template-columns: 1fr 1fr 1fr;       
+    }
+    .col-full{
+        grid-column: 1 / -1;
+    }
+    .col-two-thirds{
+        grid-column: 1 / 3;       
+    }
+    .card{      
+        flex-flow: row wrap;       
+        padding: 1rem;      
+    }
+    .lead-intro {    
+        font-size: 2rem;
+    }
+    .card-body{
+        margin-left: 15px;;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header{       
+        margin-right: 5rem;
+    }
+    
+}
